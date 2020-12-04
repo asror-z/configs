@@ -39,41 +39,41 @@ $boot->start();
 $boot->returnTimer = false;
 
 
-#region vendori
+#region vendors
 
 /**
  *
- * vendori
+ * vendors
  */
 
-require Root . '/vendori/kernel/yiisofts/vendor/autoload.php';
-require Root . '/vendori/utility/ALL/vendor/autoload.php';
+require Root . '/vendors/kernel/yiisofts/vendor/autoload.php';
+require Root . '/vendors/utility/ALL/vendor/autoload.php';
 
-require Root . '/vendori/utility/collect/vendor/autoload.php';
-require Root . '/vendori/netter/geoip/vendor/autoload.php';
-require Root . '/vendori/kernel/laravel/vendor/autoload.php';
+require Root . '/vendors/utility/collect/vendor/autoload.php';
+require Root . '/vendors/netter/geoip/vendor/autoload.php';
+require Root . '/vendors/kernel/laravel/vendor/autoload.php';
 
-require Root . '/vendori/string/ALL/vendor/autoload.php';
-require Root . '/vendori/kernel/symfon/vendor/autoload.php';
+require Root . '/vendors/string/ALL/vendor/autoload.php';
+require Root . '/vendors/kernel/symfon/vendor/autoload.php';
 
 
 /*
-require Root . '/vendori/netter/payer/vendor/autoload.php';
-require Root . '/vendori/netter/tgbot/vendor/autoload.php';
-require Root . '/vendori/parser/html/vendor/autoload.php';
-require Root . '/vendori/netter/ALL/vendor/autoload.php';
-require Root . '/vendori/fileapp/office/vendor/autoload.php';
-require Root . '/vendori/netter/phone/vendor/autoload.php';
+require Root . '/vendors/netter/payer/vendor/autoload.php';
+require Root . '/vendors/netter/tgbot/vendor/autoload.php';
+require Root . '/vendors/parser/html/vendor/autoload.php';
+require Root . '/vendors/netter/ALL/vendor/autoload.php';
+require Root . '/vendors/fileapp/office/vendor/autoload.php';
+require Root . '/vendors/netter/phone/vendor/autoload.php';
 
-require Root . '/vendori/debug/ALL/vendor/autoload.php';
-require Root . '/vendori/image/ALL/vendor/autoload.php';
-require Root . '/vendori/fileapp/ALL/vendor/autoload.php';
-require Root . '/vendori/utility/league/vendor/autoload.php';
-require Root . '/vendori/thread/reacts/vendor/autoload.php';
-require Root . '/vendori/utility/spatie/vendor/autoload.php';
-require Root . '/vendori/debug/tester/vendor/autoload.php';
-require Root . '/vendori/netter/acme/vendor/autoload.php';
-require Root . '/vendori/thread/amphp/vendor/autoload.php';*/
+require Root . '/vendors/debug/ALL/vendor/autoload.php';
+require Root . '/vendors/image/ALL/vendor/autoload.php';
+require Root . '/vendors/fileapp/ALL/vendor/autoload.php';
+require Root . '/vendors/utility/league/vendor/autoload.php';
+require Root . '/vendors/thread/reacts/vendor/autoload.php';
+require Root . '/vendors/utility/spatie/vendor/autoload.php';
+require Root . '/vendors/debug/tester/vendor/autoload.php';
+require Root . '/vendors/netter/acme/vendor/autoload.php';
+require Root . '/vendors/thread/amphp/vendor/autoload.php';*/
 
 
 #endregion
@@ -85,10 +85,6 @@ $boot->finish();
  *
  * Core Requires
  */
-
-
-
-
 require Root . '/service/ALL/ALL.php';
 
 require Root . '/system/actives/ZConnection.php';
@@ -127,7 +123,7 @@ if (Mode === 'init')
  *
  * Yii Mode
  */
-require Root . '/vendori/kernel/yiisofts/vendor/yiisoft/yii2/Yii.php';
+require Root . '/vendors/kernel/yiisofts/vendor/yiisoft/yii2/Yii.php';
 Yii::$classMap = array_merge(Yii::$classMap, $boot->map());
 
 
